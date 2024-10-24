@@ -1,1 +1,1 @@
-<!-- ecrire la page globale ici -->
+<!-- ecrire dans cette page globale ici -->
