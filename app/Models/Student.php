@@ -8,6 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     use HasFactory;
+    protected $table = 'student'; // Optional if the table name is plural of the model name
+
+    // Primary key
+    protected $primaryKey = 'id';
+
+    // Indicates if the IDs are auto-incrementing.
+    public $timestamps = false;
 
     protected $fillable = [
         'first_name', 'last_name', 'birthday', 'grade_level',
