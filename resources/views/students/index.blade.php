@@ -7,7 +7,8 @@
 										<div class="card-title">
 											<h3 class="card-label">Students details
 										</div>
-										
+                                        <a href="{{ route('students.create') }}" class="btn btn-primary" style="float: right; margin-top: 10px;">Add New Student</a>
+	
 									</div>
 									<div class="card-body">
 										<!--begin: Search Form-->
@@ -39,12 +40,6 @@
                                             <th>First Name</th>
                                             <th>Last Name</th>
                                             <th>Birthday</th>
-                                            <th>Grade Level</th>
-                                            <th>Phone Number</th>
-                                            <th>Email</th>
-                                            <th>Registration Date</th>
-                                            <th>Responsible Name</th>
-                                            <th>Responsible Contact</th>
                                             <th>Picture</th>
                                             <th>Actions</th>
                                         </tr>
@@ -55,12 +50,6 @@
                                                 <td>{{ $student->first_name }}</td>
                                                 <td>{{ $student->last_name }}</td>
                                                 <td>{{ $student->birthday }}</td>
-                                                <td>{{ $student->grade_level }}</td>
-                                                <td>{{ $student->phone_number }}</td>
-                                                <td>{{ $student->email }}</td>
-                                                <td>{{ $student->registration_date }}</td>
-                                                <td>{{ $student->responsible_name }}</td>
-                                                <td>{{ $student->responsible_contact }}</td>
                                                 <td>{{ $student->picture }}</td>
                                                 <td>
                                                     <a href="{{ route('students.show', $student->id) }}" class="btn btn-info">View</a>
